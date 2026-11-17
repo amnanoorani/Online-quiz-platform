@@ -1,0 +1,50 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.Master.cs" Inherits="QUIZGAMEUI.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Quiz Game Master Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- Main Layout Table -->
+        <table class="master-table" cellpadding="0" cellspacing="0">
+            <!-- Header Row -->
+            <tr>
+                <td class="header-row">
+                    <h1>QUIZ MASTER PRO</h1>
+                    <p>Academic Assessment Portal</p>
+                </td>
+            </tr>
+            <!-- Menu Row -->
+            <tr>
+                <td class="menu-row">
+                    <a href="Start_Quiz_Game_Page.aspx">Home</a>
+                    <a href="Login_Page.aspx">Login</a>
+                    <a href="Registration_Page.aspx">Register</a>
+                    <a href="Admin_Dashboard.aspx">Admin</a>
+                    <a href="LeatherBoard_Page.aspx">Leaderboard</a>
+                </td>
+            </tr>
+            <!-- Content Row -->
+            <tr>
+                <td class="content-row">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <!-- Footer Row -->
+            <tr>
+                <td class="footer-row">
+                    &copy; 2024 Quiz Master Pro. All Rights Reserved.
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

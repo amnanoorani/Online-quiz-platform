@@ -1,0 +1,12 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Local database files (use schema.sql to create the database)
+App_Data/*.mdf
+App_Data/*.ldf
